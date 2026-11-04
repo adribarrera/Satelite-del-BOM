@@ -1,1 +1,0 @@
-# Satelite-del-BOM

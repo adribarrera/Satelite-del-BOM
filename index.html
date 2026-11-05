@@ -15,30 +15,7 @@
         <div id="statusText" class="status">Ventana Satélite en espera</div>
     </main>
 
-    <script>
-        const btnLanzar = document.getElementById("btnLanzar");
-        const statusText = document.getElementById("statusText");
-
-        btnLanzar.addEventListener("click", () => {
-            const anchoVentana = Math.floor(screen.availWidth / 2);
-            const altoVentana = Math.floor(screen.availHeight / 2);
-
-            // Cálculo con screen.availWidth y screen.availHeight
-            const posX = Math.floor((screen.availWidth - anchoVentana) / 2);
-            const posY = Math.floor((screen.availHeight - altoVentana) / 2);
-
-            const parametros = `width=${anchoVentana},height=${altoVentana},left=${posX},top=${posY},resizable=no`;
-            const ventanaSatelite = window.open("satelite.html", "VentanaSatelite", parametros);
-
-            if (!ventanaSatelite || ventanaSatelite.closed || typeof ventanaSatelite.closed === "undefined") {
-                statusText.textContent = "Pop-up bloqueado. Concede permisos de ventana emergente.";
-                statusText.style.color = "#ef4444";
-            } else {
-                statusText.textContent = "Satélite desplegado";
-                statusText.style.color = "#10b981";
-            }
-        });
-    </script>
+    <script src="js/scriptIndex.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: #f9fafb;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+
+#saludoSO {
+    font-size: 0.85rem;
+    color: #60a5fa;
+    font-weight: 600;
+    background-color: rgba(59, 130, 246, 0.15);
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.btn-grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+.btn-grupo button {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #374151;
+    background-color: #1f2937;
+    color: #f9fafb;
+    cursor: pointer;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.btn-grupo button:hover {
+    background-color: #374151;
+    border-color: #4b5563;
+}
+
+#btnDestruir {
+    background-color: rgba(239, 68, 68, 0.15);
+    border-color: #ef4444;
+    color: #fca5a5;
+}
+
+#btnDestruir:hover {
+    background-color: #ef4444;
+    color: #ffffff;
+}
+
+#btnDestruir:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#temporizador {
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    min-height: 1.2rem;
+    font-weight: 600;
+}
